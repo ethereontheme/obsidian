@@ -121,12 +121,12 @@ body {
 /** 4.2. Headings */
 /** 4.2.1. Fix heading weights */
 body {
-    --h1-weight: 400;
-    --h2-weight: 200;
-    --h3-weight: 200;
-    --h4-weight: 200;
-    --h5-weight: 200;
-    --h6-weight: 200;
+    --h1-weight: 500;
+    --h2-weight: 400;
+    --h3-weight: 400;
+    --h4-weight: 400;
+    --h5-weight: 400;
+    --h6-weight: 400;
 }
 
 /** 4.2.2 Fix heading space */
