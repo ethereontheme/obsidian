@@ -3,7 +3,7 @@
 /* 2. Colours
 /***** *****/
 
-/* 1. Font */
+/** 1. Font */
 body {
     --font-monospace: "Courier New", monospace;
     -webkit-font-smoothing: auto;
@@ -15,7 +15,7 @@ body {
     --h6-color: var(--text-title-h6);
 }
 
-/* 2. Colours */
+/** 2. Colours */
 .theme-dark {
     --background: #1d1f21;
     --foreground: #c5c8c6;
