@@ -1,6 +1,12 @@
 /***** TABLE OF CONTENTS *****/
 /* 1. Font
 /* 2. Colors
+/* 3. General UI
+/* 4. Markdown (editor / preview)
+/*     4.1. Title
+/*     4.2. Headings
+/*         4.2.1. Fix heading weights
+/*         4.2.2. Fix heading margins
 /***** *****/
 
 /** 1. Font */
@@ -53,6 +59,47 @@ body {
     --h6-color: var(--color-purple);
 }
 
+/** 3. Generic UI */
+/** 4. Markdown (editor / preview) */
+/** 4.1. Title */
+/** 4.2. Headings */
+/** 4.2.1. Fix heading weights */
+body {
+    --h1-weight: 300;
+    --h2-weight: 100;
+    --h3-weight: 100;
+    --h4-weight: 100;
+    --h5-weight: 100;
+    --h6-weight: 100;
+}
+
+/** 4.2.1. Fix heading margins */
+.markdown-rendered h1 {
+    margin-block-end: 0;
+}
+
+.markdown-rendered h2 {
+    margin-block-end: 0;
+}
+
+.markdown-rendered h3 {
+    margin-block-end: 0;
+}
+
+.markdown-rendered h4 {
+    margin-block-end: 0;
+}
+
+.markdown-rendered h5 {
+    margin-block-end: 0;
+}
+
+.markdown-rendered h6 {
+    margin-block-end: 0;
+}
+
+.markdown-rendered p {
+    margin-block-start: 0;
 }
 
 body {
