@@ -5,6 +5,8 @@
 /*     3.2. Status Bar
 /*         3.2.1. Fix status bar border
 /*         3.2.2. Fix status bar padding
+/*     3.3. Sidebar
+/*         3.3.1. Fix sidebar padding
 /* 4. Markdown (editor / preview)
 /*     4.1. Title
 /*     4.2. Headings
@@ -167,6 +169,12 @@ body {
 /** 4.7.3. Fix formatting quote > */
 .cm-s-obsidian span.cm-formatting-quote {
     margin-left: 2px;
+}
+
+/* 3.3. Sidebar */
+/* 3.3.1. Fix sidebar padding */
+.nav-file-title-content, .nav-folder-title-content {
+    padding-top: 2px;
 }
 
 /** 5. Graph view */
