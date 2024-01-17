@@ -214,7 +214,7 @@ body {
 
 /* 3.3. Sidebar */
 /* 3.3.1. Fix sidebar padding */
-.nav-file-title-content, .nav-folder-title-content {
+.nav-file-title-content, .nav-folder-title-content, .tree-item-inner {
     padding-top: 2px;
 }
 
