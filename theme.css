@@ -6,7 +6,7 @@
 /*     4.1. Title
 /*     4.2. Headings
 /*         4.2.1. Fix heading weights
-/*         4.2.2. Fix heading margins
+/*         4.2.2. Fix heading space
 /*     4.6. Task Lists
 /*         4.6.1. Fix checkbox style
 /*         4.6.2. Fix checkbox tick style
@@ -90,6 +90,11 @@ body {
     --h4-weight: 100;
     --h5-weight: 100;
     --h6-weight: 100;
+}
+
+/** 4.2.2 Fix heading space */
+body {
+    --heading-spacing: calc(var(--p-spacing) * 1.5)
 }
 
 /** 4.2.1. Fix heading margins */
