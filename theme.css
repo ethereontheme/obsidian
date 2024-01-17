@@ -2,6 +2,8 @@
 /* 1. Font
 /* 2. Colors
 /* 3. General UI
+/*     3.1. Title Bar
+/*         3.1.2. Fix tab header padding
 /*     3.2. Status Bar
 /*         3.2.1. Fix status bar border
 /*         3.2.2. Fix status bar padding
@@ -71,6 +73,7 @@ body {
     --accent-h: 172;
     --accent-s: 20%;
     --accent-l: 46%;
+    --background-secondary-alt: var(--color-base-20);
 }
 
 body {
@@ -83,9 +86,17 @@ body {
     --h6-color: var(--color-purple);
     --background-primary-alt: var(--color-base-05);
     --background-secondary: var(--color-base-10);
+    --background-modifier-hover: rgba(var(--mono-rgb-0), 0.75);
 }
 
 /** 3. Generic UI */
+/** 3.1. Title Bar */
+/** 3.1.2. Fix tab header padding */
+.workspace .mod-root .workspace-tab-header-inner-title {
+    padding-top: 0.4rem;
+    padding-left: 0.4rem;
+}
+
 /* 3.2. Status Bar */
 /* 3.2.1. Fix status bar border */
 body {
