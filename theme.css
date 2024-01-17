@@ -19,6 +19,9 @@
 /*         4.7.1. Fix blockquote margin
 /*         4.7.2. Fix blockquote border
 /*         4.7.3. Fix formatting quote >
+/*     4.8. Horizontal rules
+/*         4.8.1. Fix horizontal rule margin
+/*         4.8.2. Fix horizontal rule thickness
 /* 5. Graph view
 /*     5.1. Graph view node colors
 /***** *****/
@@ -173,6 +176,17 @@ body {
 /** 4.7.3. Fix formatting quote > */
 .cm-s-obsidian span.cm-formatting-quote {
     margin-left: 2px;
+}
+
+/** 4.8. Horizontal rules /*/
+/** 4.8.1. Fix horizontal rule margin */
+hr {
+    margin: 1.5rem 0;
+}
+
+/** 4.8.2. Fix horizontal rule thickness */
+body {
+    --hr-thickness: 1px;
 }
 
 /* 3.3. Sidebar */
