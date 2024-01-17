@@ -54,9 +54,9 @@ body {
     --color-base-60: #828484;
     --color-base-70: #9e9796;
     --color-base-100: #c5c8c6;
-    --accent-h: 285;
-    --accent-s: 16%;
-    --accent-l: 48%;
+    --accent-h: 172;
+    --accent-s: 20%;
+    --accent-l: 46%;
 body {
     --inline-title-color: var(--color-base-50);
     --h1-color: var(--color-orange);
