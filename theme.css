@@ -13,6 +13,32 @@ body {
 .theme-dark {
     --background: #1d1f21;
     --foreground: #c5c8c6;
+    --color-red-rgb: 165, 66, 66;
+    --color-red: #a54242;
+    --color-orange-rgb: 222, 147, 95;
+    --color-orange: #de935f;
+    --color-yellow-rgb: 224, 222, 113;
+    --color-yellow: #e0de71;
+    --color-green-rgb: 140, 148, 64;
+    --color-green: #8c9440;
+    --color-teal-rgb: 94, 141, 135;
+    --color-teal: #5e8d87;
+    --color-blue-rgb: 95, 129, 157;
+    --color-blue: #5f819d;
+    --color-purple-rgb: 178, 148, 187;
+    --color-purple: #b294bb;
+    --color-pink-rgb: 104, 102, 102;
+    --color-pink: #cc6666;
+body {
+    --inline-title-color: #707880; /** #TODO: Relocate this tag from here */
+    --h1-color: var(--color-orange);
+    --h2-color: var(--color-yellow);
+    --h3-color: var(--color-green);
+    --h4-color: var(--color-teal);
+    --h5-color: var(--color-blue);
+    --h6-color: var(--color-purple);
+}
+
 }
 
 body {
