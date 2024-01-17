@@ -26,6 +26,8 @@
 /*         4.5.2. Fix horizontal rule thickness
 /*     4.6. Tables
 /*         4.6.1. Fix table element padding
+/*     4.7. Code blocks
+/*         4.7.1. Fix code block font size
 /* 5. Graph view
 /*     5.1. Graph view node colors
 /***** *****/
@@ -265,6 +267,12 @@ body {
 
 .markdown-source-view.mod-cm6 .cm-table-widget .table-cell-wrapper {
     padding: var(--size-4-2);
+}
+
+/** 4.7. Code blocks */
+/** 4.7.1. Fix code block font size */
+body {
+    --code-size: --font-normal;
 }
 
 /** 5. Graph view */
