@@ -150,6 +150,12 @@ body {
     padding-top: var(--size-2-3);
 }
 
+/* 3.3. Sidebar */
+/* 3.3.1. Fix sidebar padding */
+.nav-file-title-content, .nav-folder-title-content, .tree-item-inner {
+    padding-top: 2px;
+}
+
 /** 4. Markdown (editor / preview) */
 /** 4.1. Title */
 body {
@@ -259,12 +265,6 @@ body {
 
 .markdown-source-view.mod-cm6 .cm-table-widget .table-cell-wrapper {
     padding: var(--size-4-2);
-}
-
-/* 3.3. Sidebar */
-/* 3.3.1. Fix sidebar padding */
-.nav-file-title-content, .nav-folder-title-content, .tree-item-inner {
-    padding-top: 2px;
 }
 
 /** 5. Graph view */
