@@ -10,6 +10,10 @@
 /*     4.6. Task Lists
 /*         4.6.1. Fix checkbox style
 /*         4.6.2. Fix checkbox tick style
+/*     4.7. Blockquotes
+/*         4.7.1. Fix blockquote margin
+/*         4.7.2. Fix blockquote border
+/*         4.7.3. Fix formatting quote >
 /***** *****/
 
 /** 1. Font */
@@ -126,6 +130,23 @@ body {
 /** 4.6.2. Fix checkbox tick style */
 input[type=checkbox]:checked:after {
     -webkit-mask-size: 75%;
+}
+
+/** 4.7. Blockquotes */
+/** 4.7.1. Fix blockquote margin */
+blockquote {
+    margin-block-start: 0.4em;
+    margin-block-end: 0.4em;
+}
+
+/** 4.7.2. Fix blockquote border */
+body {
+    --blockquote-border-thickness: 4px;
+}
+
+/** 4.7.3. Fix formatting quote > */
+.cm-s-obsidian span.cm-formatting-quote {
+    margin-left: 2px;
 }
 
 body {
