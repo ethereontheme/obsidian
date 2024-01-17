@@ -31,6 +31,8 @@ body {
     --color-green: #8c9440;
     --color-teal-rgb: 94, 141, 135;
     --color-teal: #5e8d87;
+    --color-cyan: var(--color-teal);
+    --color-cyan-rgb: var(--color-teal-rgb);
     --color-blue-rgb: 95, 129, 157;
     --color-blue: #5f819d;
     --color-purple-rgb: 178, 148, 187;
@@ -45,9 +47,9 @@ body {
     --color-base-30: #4f5252;
     --color-base-35: #585a5b;
     --color-base-40: #606363;
-    --color-base-50: #717774;
+    --color-base-50: #707880; /** Out of order. Speical grey */
     --color-base-60: #828484;
-    --color-base-70: #9c9594;
+    --color-base-70: #9e9796;
     --color-base-100: #c5c8c6;
 body {
     --inline-title-color: #707880; /** #TODO: Relocate this tag from here */
@@ -57,6 +59,7 @@ body {
     --h4-color: var(--color-teal);
     --h5-color: var(--color-blue);
     --h6-color: var(--color-purple);
+    --background-primary-alt: var(--color-base-05);
 }
 
 /** 3. Generic UI */
