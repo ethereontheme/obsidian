@@ -169,6 +169,13 @@ body {
     margin-left: 2px;
 }
 
+/** 5. Graph view */
+/* 5.1. Graph view node colors */
+body {
+    --graph-node-tag: var(--color-blue);
+    --graph-node-attachment: var(--color-green);
+}
+
 body {
     --radius-s: 0px;
     --radius-m: 0px;
