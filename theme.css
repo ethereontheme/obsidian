@@ -16,6 +16,11 @@ body {
 }
 
 /* 2. Colours */
+.theme-dark {
+    --background: #1d1f21;
+    --foreground: #c5c8c6;
+}
+
 body {
     --radius-s: 0px;
     --radius-m: 0px;
