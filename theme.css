@@ -1,21 +1,15 @@
 /***** TABLE OF CONTENTS *****/
 /* 1. Font
-/* 2. Colours
+/* 2. Colors
 /***** *****/
 
 /** 1. Font */
 body {
     --font-monospace: "Courier New", monospace;
     -webkit-font-smoothing: auto;
-    --h1-color: var(--text-title-h1);
-    --h2-color: var(--text-title-h2);
-    --h3-color: var(--text-title-h3);
-    --h4-color: var(--text-title-h4);
-    --h5-color: var(--text-title-h5);
-    --h6-color: var(--text-title-h6);
 }
 
-/** 2. Colours */
+/** 2. Colors */
 .theme-dark {
     --background: #1d1f21;
     --foreground: #c5c8c6;
