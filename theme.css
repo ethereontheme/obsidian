@@ -2,6 +2,9 @@
 /* 1. Font
 /* 2. Colors
 /* 3. General UI
+/*     3.2. Status Bar
+/*         3.2.1. Fix status bar border
+/*         3.2.2. Fix status bar padding
 /* 4. Markdown (editor / preview)
 /*     4.1. Title
 /*     4.2. Headings
@@ -70,9 +73,21 @@ body {
     --h5-color: var(--color-blue);
     --h6-color: var(--color-purple);
     --background-primary-alt: var(--color-base-05);
+    --background-secondary: var(--color-base-10);
 }
 
 /** 3. Generic UI */
+/* 3.2. Status Bar */
+/* 3.2.1. Fix status bar border */
+body {
+    --status-bar-border-width: 0;
+}
+
+/* 3.2.2. Fix status bar padding */
+.status-bar {
+    padding-top: var(--size-2-3);
+}
+
 /** 4. Markdown (editor / preview) */
 /** 4.1. Title */
 body {
