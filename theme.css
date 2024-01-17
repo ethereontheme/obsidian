@@ -13,6 +13,8 @@ body {
 .theme-dark {
     --background: #1d1f21;
     --foreground: #c5c8c6;
+    --mono-rgb-0: 29, 31, 33;
+    --mono-rgb-100: 197, 200, 198;
     --color-red-rgb: 165, 66, 66;
     --color-red: #a54242;
     --color-orange-rgb: 222, 147, 95;
@@ -29,6 +31,18 @@ body {
     --color-purple: #b294bb;
     --color-pink-rgb: 104, 102, 102;
     --color-pink: #cc6666;
+    --color-base-00: #1d1f21;
+    --color-base-05: #252729;
+    --color-base-10: #2e3032;
+    --color-base-20: #3f4142;
+    --color-base-25: #47494a;
+    --color-base-30: #4f5252;
+    --color-base-35: #585a5b;
+    --color-base-40: #606363;
+    --color-base-50: #717774;
+    --color-base-60: #828484;
+    --color-base-70: #9c9594;
+    --color-base-100: #c5c8c6;
 body {
     --inline-title-color: #707880; /** #TODO: Relocate this tag from here */
     --h1-color: var(--color-orange);
