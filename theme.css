@@ -7,6 +7,9 @@
 /*     4.2. Headings
 /*         4.2.1. Fix heading weights
 /*         4.2.2. Fix heading margins
+/*     4.6. Task Lists
+/*         4.6.1. Fix checkbox style
+/*         4.6.2. Fix checkbox tick style
 /***** *****/
 
 /** 1. Font */
@@ -114,13 +117,23 @@ body {
     margin-block-start: 0.2rem;
 }
 
+/** 4.6. Task Lists */
+/** 4.6.1. Fix checkbox style */
+body {
+    --checkbox-radius: 6px;
+}
+
+/** 4.6.2. Fix checkbox tick style */
+input[type=checkbox]:checked:after {
+    -webkit-mask-size: 75%;
+}
+
 body {
     --radius-s: 0px;
     --radius-m: 0px;
     --radius-l: 0px;
     --input-radius: 0px;
     --tab-radius-active: 0px;
-    --checkbox-radius: 0px;
     --toggle-radius: 0px;
     --toggle-thumb-radius: 0px;
     --slider-thumb-radius: 0px;
