@@ -24,6 +24,8 @@
 /*     4.5. Horizontal rules
 /*         4.5.1. Fix horizontal rule margin
 /*         4.5.2. Fix horizontal rule thickness
+/*     4.6. Tables
+/*         4.6.1. Fix table element padding
 /* 5. Graph view
 /*     5.1. Graph view node colors
 /***** *****/
@@ -86,7 +88,7 @@ body {
     --h6-color: var(--color-purple);
     --background-primary-alt: var(--color-base-05);
     --background-secondary: var(--color-base-10);
-    --background-modifier-hover: rgba(var(--mono-rgb-0), 0.75);
+    --background-modifier-hover: rgba(var(--mono-rgb-0), 0.5);
 }
 
 /** 3. Generic UI */
@@ -119,12 +121,12 @@ body {
 /** 4.2. Headings */
 /** 4.2.1. Fix heading weights */
 body {
-    --h1-weight: 300;
-    --h2-weight: 100;
-    --h3-weight: 100;
-    --h4-weight: 100;
-    --h5-weight: 100;
-    --h6-weight: 100;
+    --h1-weight: 400;
+    --h2-weight: 200;
+    --h3-weight: 200;
+    --h4-weight: 200;
+    --h5-weight: 200;
+    --h6-weight: 200;
 }
 
 /** 4.2.2 Fix heading space */
@@ -198,6 +200,16 @@ hr {
 /** 4.5.2. Fix horizontal rule thickness */
 body {
     --hr-thickness: 1px;
+}
+
+/** 4.6. Tables */
+/** 4.6.1. Fix table element padding */
+.markdown-rendered td, .markdown-rendered th {
+    padding: var(--size-4-2);
+}
+
+.markdown-source-view.mod-cm6 .cm-table-widget .table-cell-wrapper {
+    padding: var(--size-4-2);
 }
 
 /* 3.3. Sidebar */
