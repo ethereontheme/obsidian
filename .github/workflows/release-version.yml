@@ -12,6 +12,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        id: install_dep
+        run: npm install
+      - name: Build less
+        id: build_less
+        run: npm run build
       - name: Bundle
         id: bundle
         run: |
