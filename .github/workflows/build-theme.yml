@@ -26,3 +26,4 @@ jobs:
         with:
           commit_message: Update theme.css
           file_pattern: theme.css
+          add_option: --force
