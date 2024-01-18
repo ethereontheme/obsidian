@@ -2,5 +2,7 @@
 	"name": "Ethereon",
 	"version": "1.0.1",
 	"minAppVersion": "1.0.0",
-	"author": "Rohit Saluja"
+	"author": "Rohit Saluja",
+	"authorUrl": "https://www.rohit04saluja.com",
+	"fundingUrl": "https://www.buymeacoffee.com/rohit04saluja"
 }
