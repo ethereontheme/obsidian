@@ -30,8 +30,6 @@
 /*         4.6.1. Fix table element padding
 /*     4.7. Code blocks
 /*         4.7.1. Fix code block font size
-/* 5. Graph view
-/*     5.1. Graph view node colors
 /***** *****/
 
 /** 1. Font */
@@ -42,41 +40,39 @@ body {
 
 /** 2. Colors */
 .theme-dark {
-    --mono-rgb-0: 29, 31, 33;
-    --mono-rgb-100: 197, 200, 198;
-    --color-red-rgb: 165, 66, 66;
-    --color-red: #a54242;
-    --color-orange-rgb: 222, 147, 95;
-    --color-orange: #de935f;
-    --color-yellow-rgb: 224, 222, 113;
-    --color-yellow: #e0de71;
-    --color-green-rgb: 140, 148, 64;
-    --color-green: #8c9440;
-    --color-teal-rgb: 94, 141, 135;
-    --color-teal: #5e8d87;
+    --mono-rgb-0: @color-ee-base-00-rgb;
+    --mono-rgb-100: @color-ee-base-100-rgb;
+    --color-red-rgb: @color-red-3-rgb;
+    --color-red: @color-red-3;
+    --color-orange-rgb: @color-orange-3-rgb;
+    --color-orange: @color-orange-3;
+    --color-yellow-rgb: @color-yellow-3-rgb;
+    --color-yellow: @color-yellow-3;
+    --color-green-rgb: @color-green-0-rgb;
+    --color-green: @color-green-0;
+    --color-teal-rgb: @color-teal-0-rgb;
+    --color-teal: @color-teal-0;
     --color-cyan: var(--color-teal);
     --color-cyan-rgb: var(--color-teal-rgb);
-    --color-blue-rgb: 95, 129, 157;
-    --color-blue: #5f819d;
-    --color-purple-rgb: 178, 148, 187;
-    --color-purple: #b294bb;
-    --color-pink-rgb: 104, 102, 102;
-    --color-pink: #cc6666;
-    --color-base-00: #1d1f21;
-    --color-base-05: #252729;
-    --color-base-10: #2e3032;
-    --color-base-20: #3f4142;
-    --color-base-25: #47494a;
-    --color-base-30: #4f5252;
-    --color-base-35: #585a5b;
-    --color-base-40: #606363;
-    --color-base-50: #717774;
-    --color-base-60: #828484;
-    --color-base-70: #9e9796;
-    --color-base-100: #c5c8c6;
+    --color-blue-rgb: @color-blue-1-rgb;
+    --color-blue: @color-blue-1;
+    --color-purple-rgb: @color-purple-2-rgb;
+    --color-purple: @color-purple-2;
+    --color-pink-rgb: @color-pink-0-rgb;
+    --color-pink: @color-pink-0;
+    --color-base-00: @color-ee-base-00;
+    --color-base-05: @color-ee-base-05;
+    --color-base-10: @color-ee-base-10;
+    --color-base-20: @color-ee-base-20;
+    --color-base-25: @color-ee-base-25;
+    --color-base-30: @color-ee-base-30;
+    --color-base-35: @color-ee-base-35;
+    --color-base-40: @color-ee-base-40;
+    --color-base-50: @color-ee-base-50;
+    --color-base-60: @color-ee-base-60;
+    --color-base-70: @color-ee-base-70;
+    --color-base-100: @color-ee-base-100;
     --background-secondary-alt: var(--color-base-20);
-    --h1-color: var(--color-orange);
-    --h2-color: var(--color-yellow);
 }
 
 .theme-light {
@@ -116,14 +112,14 @@ body {
 }
 
 body {
-    --accent-h: 172;
-    --accent-s: 20%;
-    --accent-l: 46%;
+    --accent-h: @color-teal-0-h;
+    --accent-s: @color-teal-0-s;
+    --accent-l: @color-teal-0-l;
     --inline-title-color: var(--color-base-50);
     --h1-color: var(--color-red);
     --h2-color: var(--color-orange);
     --h3-color: var(--color-yellow);
-    --h4-color: var(--color-teal);
+    --h4-color: var(--color-green);
     --h5-color: var(--color-blue);
     --h6-color: var(--color-purple);
     --background-primary-alt: var(--color-base-05);
@@ -272,11 +268,4 @@ body {
 /** 4.7.1. Fix code block font size */
 body {
     --code-size: --font-normal;
-}
-
-/** 5. Graph view */
-/* 5.1. Graph view node colors */
-body {
-    --graph-node-tag: var(--color-blue);
-    --graph-node-attachment: var(--color-green);
 }
