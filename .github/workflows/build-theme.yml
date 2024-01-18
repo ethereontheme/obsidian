@@ -6,7 +6,7 @@ jobs:
   build-theme-css:
     runs-on: ubuntu-latest
 
-permissions:
+    permissions:
       contents: write
 
     steps:
