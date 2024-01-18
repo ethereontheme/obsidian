@@ -1,3 +1,5 @@
+@import  "base";
+
 /***** TABLE OF CONTENTS *****/
 /* 1. Font
 /* 2. Colors
@@ -40,8 +42,6 @@ body {
 
 /** 2. Colors */
 .theme-dark {
-    --background: #1d1f21;
-    --foreground: #c5c8c6;
     --mono-rgb-0: 29, 31, 33;
     --mono-rgb-100: 197, 200, 198;
     --color-red-rgb: 165, 66, 66;
@@ -80,12 +80,10 @@ body {
 }
 
 .theme-light {
-    --background: #c5c8c6;
-    --foreground: #1d1f21;
-    --mono-rgb-0: 197, 200, 198;
-    --mono-rgb-100: 29, 31, 33;
+    --mono-rgb-0: var(--color-ee-base-00-rgb);
+    --mono-rgb-100: var(--color-ee-base-100-rgb);
     --color-red-rgb: 141, 94, 100;
-    --color-red: #8D5E64;
+    --color-red: var(--color-red-0);
     --color-orange-rgb: 141, 111, 94;
     --color-orange: #8d6f5e;
     --color-yellow-rgb: 141, 135, 94;
@@ -115,8 +113,6 @@ body {
     --color-base-70: #57595b;
     --color-base-100: #1d1f21;
     --background-secondary-alt: var(--color-base-20);
-    --h1-color: var(--color-red);
-    --h2-color: var(--color-orange);
 }
 
 body {
@@ -124,7 +120,9 @@ body {
     --accent-s: 20%;
     --accent-l: 46%;
     --inline-title-color: var(--color-base-50);
-    --h3-color: var(--color-green);
+    --h1-color: var(--color-red);
+    --h2-color: var(--color-orange);
+    --h3-color: var(--color-yellow);
     --h4-color: var(--color-teal);
     --h5-color: var(--color-blue);
     --h6-color: var(--color-purple);
