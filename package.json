@@ -1,8 +1,9 @@
 {
-    "name": "one-dark-obsidian",
+    "name": "ethereon",
     "version": "1.0.0",
     "scripts": {
-        "version": "node version-bump.mjs && git add manifest.json versions.json"
+        "version": "node version-bump.mjs && git add manifest.json versions.json",
+        "build": "lessc obsidian.less theme.css"
     },
     "dependencies": {
         "less": "^4.2.0"
