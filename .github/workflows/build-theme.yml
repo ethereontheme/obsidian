@@ -1,0 +1,28 @@
+name: Build and commit theme.css
+
+on: push
+
+jobs:
+  build-theme-css:
+    runs-on: ubuntu-latest
+
+permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        id: install_dep
+        run: npm install
+      - name: Build less
+        id: build_less
+        run: npm run build
+      - name: Commit theme.css
+        id: commit_theme_css
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Update theme.css
+          file_pattern: theme.css
