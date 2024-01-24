@@ -11,6 +11,8 @@
 /*         3.2.2. Fix status bar padding
 /*     3.3. Sidebar
 /*         3.3.1. Fix sidebar padding
+/*     3.4. Suggestions
+/*         3.4.1. Fix selected suggestion item background
 /* 4. Markdown (editor / preview)
 /*     4.1. Title
 /*     4.2. Headings
@@ -161,6 +163,14 @@ body {
 .nav-file-title-content, .nav-folder-title-content, .tree-item-inner {
     padding-top: 2px;
 }
+
+/* 3.4. Suggestions */
+/* 3.4.1. Fix selected suggestion item background */
+.suggestion-item.is-selected
+{
+    background-color: var(--text-selection);
+}
+
 
 /** 4. Markdown (editor / preview) */
 /** 4.1. Title */
