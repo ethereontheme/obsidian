@@ -32,6 +32,7 @@
 /*         4.6.1. Fix table element padding
 /*     4.7. Code blocks
 /*         4.7.1. Fix code block font size
+/*         4.7.2. Fix code block alignment and background
 /*     4.8. Lists
 /*         4.8.1. Fix list bullet radius
 /***** *****/
@@ -303,6 +304,59 @@ body {
 /** 4.7.1. Fix code block font size */
 body {
     --code-size: --font-normal;
+}
+
+/** 4.7.2. Fix code block alignment and background */
+.cm-s-obsidian .cm-inline-code:not(.cm-formatting) {
+    padding-top: 0.04em;
+    padding-bottom: 0.04em;
+    vertical-align: bottom;
+}
+
+.cm-s-obsidian .cm-inline-code.cm-formatting ~ .cm-inline-code:not(.cm-formatting) {
+    padding: 0em;
+    vertical-align: bottom;
+}
+
+.cm-s-obsidian .cm-inline-code:not(.cm-formatting) + .cm-inline-code.cm-formatting {
+    padding: 0em;
+    vertical-align: bottom;
+}
+
+.cm-s-obsidian .cm-inline-code.cm-formatting {
+    padding: 0em;
+    vertical-align: bottom;
+}
+
+.cm-highlight.cm-inline-code:not(.cm-formatting) {
+    border-radius: 0px;
+}
+
+.cm-s-obsidian .cm-highlight.cm-inline-code.cm-formatting ~ .cm-inline-code:not(.cm-formatting) {
+    vertical-align: bottom;
+    padding-top: 0.04em;
+    padding-bottom: 0.04em;
+}
+
+.cm-s-obsidian .cm-highlight.cm-inline-code:not(.cm-formatting) + .cm-inline-code.cm-formatting {
+    vertical-align: bottom;
+    border-radius: 0px;
+    padding-top: 0.04em;
+    padding-bottom: 0.04em;
+}
+
+.cm-s-obsidian .cm-highlight.cm-inline-code.cm-formatting {
+    vertical-align: bottom;
+    padding: 0.04em 0em;
+    border-radius: 0px;
+}
+
+.cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight {
+    border-radius: 0px;
+}
+
+.markdown-rendered code {
+    vertical-align: bottom;
 }
 
 /** 4.8. Lists */
